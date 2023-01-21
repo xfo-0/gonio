@@ -1,5 +1,5 @@
-local util = require("despacio.util")
-local colors = require("despacio.colors")
+local util = require("gonio.util")
+local colors = require("gonio.colors")
 
 local M = {}
 --
@@ -13,7 +13,7 @@ local M = {}
 
 ---@return Theme
 function M.setup()
-	local config = require("despacio.config")
+	local config = require("gonio.config")
 	local options = config.options
 	---@class Theme
 	---@field highlights Highlights
@@ -286,16 +286,16 @@ function M.setup()
 
 		-- Lua
 		-- luaTSProperty = { fg = c.red }, -- Same as `TSField`.
-    -- :
+		-- :
 
 		-- ts-rainbow
-    TSRainbowRed = { fg = c.red },
+		TSRainbowRed = { fg = c.red },
 		TSRainbowYellow = { fg = c.yellow },
 		TSRainbowBlue = { fg = c.tan2 },
-    TSRainbowOrange = { fg = c.tan1 },
-    TSRainbowGreen = { fg = c.brown1 },
+		TSRainbowOrange = { fg = c.tan1 },
+		TSRainbowGreen = { fg = c.brown1 },
 		TSRainbowViolet = { fg = c.brown },
-    TSRainbowCyan = { fg = c.purple },
+		TSRainbowCyan = { fg = c.purple },
 
 		-- LspTrouble
 		TroubleText = { fg = c.fg_dark },

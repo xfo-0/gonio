@@ -24,28 +24,27 @@ colors:
   normal:
     black:   '${black}'
     red:     '${red}'
-    green:   '${green}'
+    green:   '${tan2}'
     yellow:  '${yellow}'
-    blue:    '${blue}'
+    blue:    '${brown1}'
     magenta: '${magenta}'
-    cyan:    '${cyan}'
+    cyan:    '${orange2}'
     white:   '${fg_dark}'
 
   # Bright colors
   bright:
     black:   '${terminal_black}'
     red:     '${red}'
-    green:   '${green}'
+    green:   '${tan2}'
     yellow:  '${yellow}'
-    blue:    '${blue}'
+    blue:    '${brown1}'
     magenta: '${magenta}'
-    cyan:    '${cyan}'
+    cyan:    '${orange2}'
     white:   '${fg}'
 
   indexed_colors:
-    - { index: 16, color: '${orange}' }
+    - { index: 16, color: '${orange1}' }
     - { index: 17, color: '${red1}' }
-    
   ]],
 		alacrittyColors
 	)

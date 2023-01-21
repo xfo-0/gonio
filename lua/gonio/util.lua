@@ -132,14 +132,14 @@ function M.terminal(colors)
   vim.g.terminal_color_3 = colors.yellow
   vim.g.terminal_color_11 = colors.yellow
 
-  vim.g.terminal_color_4 = colors.blue
-  vim.g.terminal_color_12 = colors.blue
+  vim.g.terminal_color_4 = colors.brown2
+  vim.g.terminal_color_12 = colors.brown2
 
   vim.g.terminal_color_5 = colors.magenta
   vim.g.terminal_color_13 = colors.magenta
 
-  vim.g.terminal_color_6 = colors.cyan
-  vim.g.terminal_color_14 = colors.cyan
+  vim.g.terminal_color_6 = colors.orange1
+  vim.g.terminal_color_14 = colors.orange1
 end
 
 ---@param colors ColorScheme

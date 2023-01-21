@@ -1,5 +1,8 @@
 local M = {}
 
+-- TODO:
+--       add file for zsh plugin fast-syntax-highlighting
+--
 local function write(str, fileName)
 	print("[write] extra/" .. fileName)
 	vim.fn.mkdir(vim.fs.dirname("extras/" .. fileName), "p")
@@ -15,22 +18,13 @@ function M.setup()
 	-- map of plugin name to plugin extension
 	local extras = {
 		kitty = "conf",
-		fish = "fish",
 		alacritty = "yml",
-		wezterm = "toml",
 		tmux = "tmux",
-		xresources = "Xresources",
-		xfceterm = "theme",
-		foot = "ini",
-		tilix = "json",
-		iterm = "itermcolors",
 		lua = "lua",
-		sublime = "tmTheme",
 		delta = "gitconfig",
-		terminator = "conf",
 	}
 	-- map of style to style name
-	local styles = { storm = " Storm", night = "", day = " Day", moon = " Moon" }
+	local styles = {  night = "", day = " Day" }
 
 	for extra, ext in pairs(extras) do
 		local plugin = require("gonio.extra." .. extra)
@@ -39,7 +33,7 @@ function M.setup()
 			local colors = require("gonio.colors").setup({ transform = true })
 			local fname = extra .. "/gonio_" .. style .. "." .. ext
 			colors["_upstream_url"] = "https://github.com/xfo-0/gonio.nvim/raw/main/extras/" .. fname
-			colors["_style_name"] = "Tokyo Night" .. style_name
+			colors["_style_name"] = "gonio " .. style_name
 			write(plugin.generate(colors), fname)
 		end
 	end

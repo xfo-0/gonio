@@ -1,0 +1,28 @@
+white = blue5
+grey0 = blue0 (or bg_visual is defined twice?)
+grey1 = used only as illuminated highlight
+grey2 = dark5
+grey3 = blue6
+magenta = (only used for Foo currently)
+fg/black = magenta2
+brown = magenta
+brown1 = blue
+orange = blue1
+orange1 = orange
+orange2 = cyan
+tan = blue2
+tan1 = teal
+tan2 = green
+brown2 = blue7
+green1 = green2
+
+git = { change = "#6183bb", add = "#449dab", delete = "#914c54" },
+gitSigns = { add = "#266d6a", change = "#536c9e", delete = "#b2555b" },
+
+tokyonight -
+  git = { change = "#6183bb", add = "#449dab", delete = "#914c54" },
+  gitSigns = {
+    add = "#266d6a",
+    change = "#536c9e",
+    delete = "#b2555b",
+  },
